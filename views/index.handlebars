@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <h1>Eat-Da-Burger!</h1>
+    <div><img src="/assets/images/burger.png" height= "250px" width="250px"></div>
+    <br>
+
+    <div class="row d-flex burger-div">
+        <div class="col">
+            <ul id="burgers-to-devour">
+                <h2>Choose a Burger!</h2>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    <p>{{name}} <button class="devour btn btn-warning btn-sm" 
+                    data-burgerid="{{id}}">Devour it!</button></p>
+                </li>
+                {{/unless}}
+                {{/each}}
+                
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul id="burgers-devoured">
+                <h2>Burgers Devoured!</h2>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    <p>{{name}}</p>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center" id="form-selection">
+      <h2>Enter a burger you want to devour then click "Submit"</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <input type="text" id="newBurgerEnter" name="name">
+        </div>
+        <button type="submit" id="newBurger" class="btn btn-primary btn-lg">Submit!</button>
+      </form>
+    </div>
+  </div>
+</div>
