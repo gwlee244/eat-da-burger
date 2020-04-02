@@ -12,6 +12,8 @@ Criteria for a successful program:
 
 * The app will store every burger in a database, whether devoured or not.
 
+* This assignment must be deployed. * Please submit both the deployed Heroku link to your homework AND the link to the Github         Repository!
+
 
 
 ```
