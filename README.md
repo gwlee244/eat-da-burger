@@ -42,7 +42,7 @@ n/a
 
 ## License
 
-* none
+* ISC
 
 ## Acknowledgments
 
